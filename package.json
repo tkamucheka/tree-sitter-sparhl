@@ -1,0 +1,27 @@
+{
+  "name": "tree-sitter-sparhl",
+  "version": "1.0.0",
+  "description": "SPARHL tree-sitter parser",
+  "main": "grammar.js",
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "keywords": [
+    "assembly",
+    "spar",
+    "sparhl"
+  ],
+  "author": "Tendayi Kamucheka",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.spar",
+      "file-types": [ "spar" ],
+      "highlights": [ "queries/highlights.scm" ],
+      "injection-regex": "spar"
+    }
+  ]
+}

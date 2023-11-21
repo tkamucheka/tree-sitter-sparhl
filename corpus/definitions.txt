@@ -1,0 +1,46 @@
+==================
+Definition
+==================
+
+x = vector<3> 
+
+----
+
+(program
+  (definition
+    (identifier)
+    (type
+      (named_type)
+      (shape
+        (dimensions
+          (dimension))))))
+
+=====================
+Definition With Value
+=====================
+
+x = vector<3> [ 0.1, 0.2, -0.3 ]
+
+----
+
+(program
+  (definition
+    (identifier)
+    (type
+      (named_type)
+      (shape
+        (dimensions
+          (dimension))))
+    (value
+      (list
+        (float
+          (digit)
+          (digit))
+        (float
+          (digit)
+          (digit))
+        (float
+          (sign)
+          (digit)
+          (digit))))))
+        
